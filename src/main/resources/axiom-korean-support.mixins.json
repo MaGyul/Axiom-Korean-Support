@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "dev.magyul.axiomkoreansupport.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "EditorUIMixin",
+    "LocalizationLoaderMixin",
+    "TextDrawingMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

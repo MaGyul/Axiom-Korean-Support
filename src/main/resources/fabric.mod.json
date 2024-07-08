@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "id": "axiom-korean-support",
+  "version": "${version}",
+  "name": "Axiom-Korean-Support",
+  "description": "Axiom Mod Korean support",
+  "authors": [
+    "MaGyul"
+  ],
+  "contact": {
+    "repo": "https://github.com/magyu/Axiom-Korean-Support"
+  },
+  "license": "MIT",
+  "icon": "assets/axiom-korean-support/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.magyul.axiomkoreansupport.AxiomKoreanSupport"
+    ]
+  },
+  "mixins": [
+    "axiom-korean-support.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "custom": {
+    "modmenu": {
+      "parent": "axiom"
+    }
+  }
+}
