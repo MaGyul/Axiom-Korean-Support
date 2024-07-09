@@ -8,7 +8,9 @@
     "MaGyul"
   ],
   "contact": {
-    "repo": "https://github.com/magyu/Axiom-Korean-Support"
+    "issues": "https://github.com/magyul/Axiom-Korean-Support/issues",
+    "sources": "https://github.com/magyul/Axiom-Korean-Support",
+    "repo": "https://github.com/magyul/Axiom-Korean-Support"
   },
   "license": "MIT",
   "icon": "assets/axiom-korean-support/icon.png",
@@ -22,9 +24,8 @@
     "axiom-korean-support.mixins.json"
   ],
   "depends": {
-    "fabricloader": ">=${loader_version}",
-    "fabric": "*",
-    "minecraft": "${minecraft_version}",
+    "fabricloader": ">=0.14.21",
+    "minecraft": ">=1.20",
     "axiom": "*"
   },
   "custom": {
