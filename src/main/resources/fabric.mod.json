@@ -16,18 +16,14 @@
   "license": "MIT",
   "icon": "assets/axiom-korean-support/icon.png",
   "environment": "client",
-  "entrypoints": {
-    "client": [
-      "dev.magyul.axiomkoreansupport.AxiomKoreanSupport"
-    ]
-  },
+  "entrypoints": {},
   "mixins": [
     "axiom-korean-support.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=0.14.21",
     "minecraft": ">=1.20.1",
-    "axiom": "*"
+    "axiom": ">=4.0.0"
   },
   "custom": {
     "modmenu": {

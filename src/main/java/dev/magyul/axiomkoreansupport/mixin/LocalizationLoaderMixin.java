@@ -14,7 +14,7 @@ import java.util.Objects;
 @Mixin(LocalizationLoader.class)
 public class LocalizationLoaderMixin {
 
-    @Inject(method = "createLocalizations", at = @At(value = "INVOKE", target = "Ljava/util/SortedMap;containsKey(Ljava/lang/Object;)Z", ordinal = 0, shift = At.Shift.BEFORE), remap = false)
+    @Inject(method = "createLocalizations", at = @At(value = "INVOKE", target = "Ljava/util/SortedMap;containsKey(Ljava/lang/Object;)Z", ordinal = 0), remap = false)
     private static void createLocalizations(CallbackInfoReturnable<Map<String, byte[]>> cir, @Local(ordinal = 1) LocalRef<String> localRef) {
         if (Objects.equals(localRef.get(), "ko")) {
             localRef.set("ko_kr");

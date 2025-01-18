@@ -25,7 +25,7 @@ public abstract class EditorUIMixin {
         return loadFont("pretendard-medium.ttf");
     }
 
-    @Inject(method = "initFonts", at = @At(value = "INVOKE", target = "Limgui/ImFontConfig;setMergeMode(Z)V", ordinal = 1, shift = At.Shift.BEFORE), remap = false)
+    @Inject(method = "initFonts", at = @At(value = "INVOKE", target = "Limgui/ImFontConfig;setMergeMode(Z)V", ordinal = 0, shift = At.Shift.AFTER), remap = false)
     private static void initFonts(String languageCode, CallbackInfo ci, @Local(ordinal = 0) ImGuiIO io, @Local(ordinal = 0) int size, @Local(ordinal = 0) ImFontConfig fontConfig) {
         if (languageCode.startsWith("ko")) {
             io.getFonts().addFontFromMemoryTTF(loadFont("pretendard-medium.ttf"), (float)size, fontConfig, io.getFonts().getGlyphRangesKorean());
